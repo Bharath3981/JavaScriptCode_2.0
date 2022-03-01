@@ -1,19 +1,20 @@
 
-$navbar-light-color: white;
+$selected: #2c7be5;
 $navbar-light-hover-color: white;
 $navbar-light-disabled-color: rgba(0,0,0,.3);
 $navbar-light-active-color: white;
 
 nav {
-  background-color: #007bbf !important;
+  background-color: #edf2f9 !important;
   .logo-text {
-    color: $navbar-light-color;
+    color: $selected;
+    font-weight: 700;
   }
   
 }
 .navbar-nav {
     .nav-link {
-      color: $navbar-light-color !important;
+      color: $selected !important;
       
 
       &:hover,
@@ -112,6 +113,7 @@ nav {
   height: 2px;
   border-radius: 1px;
   margin: 4px 0px;
+  background-color: black;
 }
 .navbar-toggle .top-bar {
   transform: rotate(45deg);

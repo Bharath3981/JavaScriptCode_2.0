@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import {Nav, Navbar, NavDropdown, Container, Offcanvas, Collapse } from 'react-bootstrap';
+import NavMenu from '../NavMenu/NavMenu';
 
 import "./Header.scss";
 //import { getApplicationBanner } from '../../Util/utilHelper';
@@ -20,7 +21,7 @@ function Header() {
     });
   return (
     <div>
-        <Navbar fixed='top'>
+        <Navbar className='shadow-sm'>
             <Container fluid>
                 <Navbar.Brand href="#">
                 {/* <img
@@ -29,24 +30,21 @@ function Header() {
                     height="35"
                     className="d-inline-block align-top"
                     alt="Incredit logo"/> */}
-                    {' '}<span className='logo-text'>InCredit</span>
+                    {' '}<span className='logo-text'>JavaScript Code</span>
                 </Navbar.Brand>
-                <button type="button" className={showOffCanvas?"d-block d-sm-none navbar-toggle":"d-block d-sm-none navbar-toggle collapsed"} onClick={handleShow}>
+                <button type="button" className={showOffCanvas?"d-block d-sm-block d-md-none navbar-toggle":"d-block d-sm-block d-md-none navbar-toggle collapsed"} onClick={handleShow}>
                    <span className="icon-bar top-bar"></span>
                    <span className="icon-bar middle-bar"></span>
                    <span className="icon-bar bottom-bar"></span>
                </button>
-                 <Nav className='max-width-575 main-menus'
-                    style={{ maxHeight: '100px' }}
-                    navbarScroll>
-                </Nav>
+                 
                 <Offcanvas onHide={handleClose} backdrop={true} 
-                id="offcanvasNavbar" className="d-block d-sm-none"
+                id="offcanvasNavbar" className="d-block d-sm-block d-md-none"
                 aria-labelledby="offcanvasNavbarLabel"
                 show={showOffCanvas} 
                 >
                     <Offcanvas.Body>
-                        test
+                        <NavMenu></NavMenu>
                     </Offcanvas.Body>
                 </Offcanvas>
             </Container>
