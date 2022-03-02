@@ -24,8 +24,8 @@ function MainContent() {
                 <Col sm={12} md={10}>
                     <Card>
                         <Card.Body>
-                            <CollapsibleSection>
-                                <div>Content</div>
+                            <CollapsibleSection title="Prototype">
+                                <div>Content1</div>
                             </CollapsibleSection>
                         </Card.Body>
                     </Card>
