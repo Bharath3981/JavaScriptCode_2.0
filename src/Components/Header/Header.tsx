@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {Nav, Navbar, NavDropdown, Container, Offcanvas, Collapse } from 'react-bootstrap';
+import {Navbar, Container, Offcanvas } from 'react-bootstrap';
 import NavMenu from '../NavMenu/NavMenu';
 
 import "./Header.scss";
@@ -7,10 +7,7 @@ import "./Header.scss";
 //const getApplicationBanner:any = lazy(() => import("../../Util/utilHelper") as any);
 
 function Header() {
-    const [headerMenus, setHeaderMenus]:any = useState([]);
-    const [show, setShow] = useState(false);
     const [showOffCanvas, setShowOffCanvas] = useState(false);
-    const [showSubMenu, setShowSubMenu] = useState(false);
 
     const handleClose = () => setShowOffCanvas(false);
     const handleShow = () => setShowOffCanvas(!showOffCanvas);

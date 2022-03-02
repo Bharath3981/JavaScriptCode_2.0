@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import "./MainContent.scss";
-import { Container, Row, Col, Card, Button, Spinner} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import NavMenu from '../NavMenu/NavMenu';
+import Card from 'react-bootstrap/Card';
+import CollapsibleSection from "../Util/CollapsibleSection/CollapsibleSection";
 
 function MainContent() {
     //const [headerMenus, setHeaderMenus]:any = useState([]);
@@ -12,12 +14,22 @@ function MainContent() {
     });
   return (
     <div>
-        <Container fluid>
+        <Container fluid className='pt-3'>
             <Row>
-                <Col md={3} className="d-none d-sm-none d-md-block">
-                    <NavMenu></NavMenu>
+                <Col md={2} className="d-none d-sm-none d-md-block">
+                   
+                        <NavMenu></NavMenu>
+                    
                 </Col>
-                <Col sm={12} md={9}>main content</Col>
+                <Col sm={12} md={10}>
+                    <Card>
+                        <Card.Body>
+                            <CollapsibleSection>
+                                <div>Content</div>
+                            </CollapsibleSection>
+                        </Card.Body>
+                    </Card>
+                </Col>
             </Row>
         </Container>
         
