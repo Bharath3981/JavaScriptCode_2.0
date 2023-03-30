@@ -5,11 +5,12 @@ $navbar-light-disabled-color: rgba(0,0,0,.3);
 $navbar-light-active-color: white;
 
 nav {
-  background-color: #edf2f9 !important;
-  .logo-text {
-    color: $selected;
-    font-weight: 700;
-  }
+  background-color: #346cb0;
+  color: hsla(0,0%,100%,.8);
+  // .logo-text {
+  //   color: $selected;
+  //   font-weight: 700;
+  // }
   
 }
 .navbar-nav {
@@ -96,7 +97,7 @@ nav {
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #f6f7f9;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;

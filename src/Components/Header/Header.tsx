@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import {Navbar, Container, Offcanvas } from 'react-bootstrap';
 import NavMenu from '../NavMenu/NavMenu';
-
 import "./Header.scss";
 //import { getApplicationBanner } from '../../Util/utilHelper';
 //const getApplicationBanner:any = lazy(() => import("../../Util/utilHelper") as any);

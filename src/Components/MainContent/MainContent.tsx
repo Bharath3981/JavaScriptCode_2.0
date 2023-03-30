@@ -17,9 +17,7 @@ function MainContent() {
         <Container fluid className='pt-3'>
             <Row>
                 <Col md={2} className="d-none d-sm-none d-md-block">
-                   
-                        <NavMenu></NavMenu>
-                    
+                    <NavMenu></NavMenu>
                 </Col>
                 <Col sm={12} md={10}>
                     <Card>
