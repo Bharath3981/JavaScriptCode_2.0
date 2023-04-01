@@ -35,9 +35,9 @@ function Header() {
                </button>
                  
                 <Offcanvas onHide={handleClose} backdrop={true} 
-                id="offcanvasNavbar" className="d-block d-sm-block d-md-none"
-                aria-labelledby="offcanvasNavbarLabel"
-                show={showOffCanvas} 
+                    id="offcanvasNavbar" className="d-block d-sm-block d-md-none"
+                    aria-labelledby="offcanvasNavbarLabel"
+                    show={showOffCanvas} 
                 >
                     <Offcanvas.Body>
                         <NavMenu></NavMenu>
